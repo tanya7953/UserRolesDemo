@@ -7,6 +7,8 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+
+        
     if(User.IsInRole("admin"))
     {
            <li class="nav-item dropdown">
@@ -17,7 +19,7 @@
     <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Logout">Logout</a></li>
     </ul>
     </li>
-
+      
     }
     else if(User.IsInRole("client"))
     {
@@ -42,14 +44,7 @@
                 </ul>
             </li>
 
-    }
-
-
-
-   
-
-
-    
+    }    
 }
 else
 {
