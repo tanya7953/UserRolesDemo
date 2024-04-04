@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-
+  
 namespace UserRolesDemo.Models
 {
     public class ApplicationUser : IdentityUser
